@@ -1,0 +1,100 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  #navbar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    border-right: solid;
+  }
+  #navbarheader {
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid;
+    Padding: 20px;
+    border-right: none;
+  }
+  #navbar ul {
+    height: 100%;
+    width: 100%;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+  }
+  #navbar li {
+   list-style: none;
+   border: 1px solid;
+   border-right: none;
+   position:relative;
+   right: 40px;
+   border-color: black;
+  }
+  #navbar li:hover {
+    background-color: #4CAF50;
+  }
+  #navbar a:hover {
+    color: white;
+  }
+  #main-doc {
+    Padding: 0px 50px;
+    margin: 0px 0px 50px 200px;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px;
+    padding-top: 50px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  img {
+    max-width: 70%;
+    margin: 20px 0px;
+  }
+  p {
+    margin: 10px 0px;
+  }
+  .examples {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+  }
+  code {
+    padding: 20px;
+    background-color: white;
+    display: block;
+    font-family: Monospace;
+    font-size: 16px;
+  }
+  .codeindent {
+    font-family: Monospace;
+    margin-left: 10px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #navbar {
+      width: 100%;
+      height: 208px;
+      overflow: scroll;
+      background-color: white;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+    } 
+    #main-doc {
+      position: relative;
+      margin-top:208px;
+      margin-left: 0px;
+    }
+    #navbarheader {
+      text-align: center;
+    }
+  }

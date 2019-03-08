@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Technical Documentation Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+  
+    <nav id ="navbar">
+        <header id="navbarheader">CSS DOCS
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+            <li><a class="nav-link" href="#CSS_Fonts">CSS Fonts</a></li>
+            <li><a class="nav-link" href="#CSS_Border">CSS Border</a></li>
+            <li><a class="nav-link" href="#CSS_Padding">CSS Padding</a></li>
+            <li><a class="nav-link" href="#CSS_Margin">CSS Margin</a></li>
+            <li><a class="nav-link" href="#The_id_Attribute">The Id Attribute</a></li>
+        </ul>
+    </nav>
+  
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <ul class="lists">
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+                <li>CSS can be added to HTML elements in 3 ways: Inline, Internal, and External</li>
+                <li>The most common way to add CSS, is to keep the styles in separate CSS files.</li> 
+            </ul>
+        </section>
+        <section class="main-section" id="CSS_Syntax">
+            <header>
+                <h1>CSS Syntax</h1>
+            </header>
+            <p>A CSS rule-set consists of a selector and a declaration block:</p>
+            <img src="https://www.w3schools.com/css/selector.gif" alt="syntax picture">
+            <p>The selector points to the HTML element you want to style.</p>
+            <p>The declaration block contains one or more declarations separated by semicolons.</p>
+            <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+            <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+            <div class="examples">
+                <h2>In the following example all p elements will be center-aligned, with a red text color:</h2>
+                <code>p {<div class="codeindent">color: red;<br>text-align: center;<br></div>}
+                </code>
+            </div>
+        
+        </section>
+        <section class="main-section" id="CSS_Fonts">
+            <header>
+                <h1>CSS Fonts</h1>
+            </header>
+            <ul>
+                <li>The CSS color property defines the text color to be used.</li>
+                <li>The CSS font-family property defines the font to be used.</li>
+                <li>The CSS font-size property defines the text size to be used.</li>
+            </ul>
+            <div class="examples">
+                <h2>Example</h2>
+                <code>h1 {<div class="codeindent">color: blue;<br>font-family: verdana;<br>font-size: 300%;</div>}<br><br>p {<br>
+                <div class="codeindent">color: red;<br>font-family: courier;<br>font-size: 160%;<br></div>}
+                </code>
+            </div>
+        </section>
+        
+        <section class="main-section" id="CSS_Border">
+            <header>
+                <h1>CSS Border</h1>
+            </header>
+            <p>The CSS border property defines a border around an HTML element:</p>
+            <div class="examples">
+                <h2>Example</h2>
+                <code>p {<div class="codeindent">border: 1px solid powderblue;</div>}</code>
+            </div>
+        </section>
+        
+        <section class="main-section" id="CSS_Padding">
+            <header>
+                <h1>CSS Padding</h1>
+            </header>
+            <p>The CSS padding property defines a padding (space) between the text and the border:</p>
+            <div class="examples">
+                <h2>Example</h2>
+                <code>p {<div class="codeindent">border: 1px solid powderblue;<br>padding: 30px;</div>}</code>
+            </div>
+        </section>
+        
+        <section class="main-section" id="CSS_Margin">
+            <header>
+                <h1>CSS Margin</h1>
+            </header>
+            <p>The CSS margin property defines a margin (space) outside the border:</p>
+            <div class="examples">
+                <h2>Example</h2>
+                <code>p {<div class="codeindent">border: 1px solid powderblue;<br>margin: 50px;</div>}</code>
+            </div>
+        </section>
+        
+        <section class="main-section" id="The_id_Attribute">
+            <header>
+                <h1>The id Attribute</h1>
+            </header>
+            <p>To define a specific style for one special element, add an id attribute to the element.</p>
+            <p>Then define a style for the element with the specific id:</p>
+            <div class="examples">
+                <h2>Example</h2>
+                <code>#p01 {<div class="codeindent">color: blue;</div>}</code>
+            </div>
+        </section>
+    </main>
+</html>
